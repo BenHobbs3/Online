@@ -1,5 +1,8 @@
-function index() {
-    console.log("Hello Squirrel");
+require('dotenv').config();
+const apiKey = process.env.API_KEY;
+
+function main() {
+    console.log(apiKey);
 }
 
-index();
+main();
